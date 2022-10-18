@@ -6,13 +6,23 @@ int a = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите второе число");
 int b = int.Parse(Console.ReadLine());
 
-if (a > b)
+if (a == b)
 {
-    Console.WriteLine("Большее число равно");
-    Console.WriteLine(a);
+    Console.WriteLine("Числа равны");
 }
+
 else
 {
-    Console.WriteLine("Большее число равно");
-    Console.WriteLine(b);
+
+    if (a > b)
+    {
+        Console.WriteLine("Большее число равно");
+        Console.WriteLine(a);
+    }
+    else
+    {
+        Console.WriteLine("Большее число равно");
+        Console.WriteLine(b);
+    }
+
 }
